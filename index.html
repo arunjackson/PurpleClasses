@@ -3,89 +3,149 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>1:1 AI Classes for Kids</title>
-  <meta name="description" content="Live one-on-one AI classes for ages 8-12 - always 1:1 with a real teacher, never a group class. Start with a free demo, the first class after the demo is $12, then $59 a week for two 1:1 classes." />
-  <meta property="og:title" content="1:1 AI Classes for Kids" />
-  <meta property="og:description" content="Live one-on-one AI classes for ages 8-12 - always 1:1 with a real teacher, never a group class. Start with a free demo, the first class after the demo is $12, then $59 a week for two 1:1 classes." />
+  <title>Live 1:1 AI Classes for Kids Aged 8-12 | Free Demo</title>
+  <meta name="description" content="Your child builds a real AI project in a free 30-minute live demo with a real teacher - always 1:1, never a group class. Then $12 for the first class, $59 a week for two." />
+  <meta property="og:title" content="Free 30-min demo: live 1:1 AI classes for kids 8-12" />
+  <meta property="og:description" content="Your child builds something with AI in a live 1:1 class with a real teacher. Free demo, then $12 for the first class." />
   <meta property="og:image" content="https://arunjackson.github.io/PurpleClasses/purple-hero.png" />
   <meta property="og:type" content="website" />
-<link rel="icon" href="favicon.ico">
-<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
-<link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <link rel="stylesheet" href="styles.css" />
-  
+  <style>
+    /* Additions for conversion elements; safe to move into styles.css */
+    .cta-note { margin: .6rem 0 0; font-size: .9rem; opacity: .8; }
+    .cta-row { display: flex; flex-wrap: wrap; gap: .75rem; }
+    .btn-lg { padding: 1rem 1.5rem; font-size: 1.1rem; font-weight: 700; }
+    .price-line { font-weight: 600; margin: .75rem 0 0; }
+    .faq details { border-bottom: 1px solid rgba(128,128,128,.3); padding: .85rem 0; }
+    .faq summary { cursor: pointer; font-weight: 600; }
+    .faq details p { margin: .6rem 0 0; }
+    .sticky-cta { display: none; }
+    @media (max-width: 700px) {
+      .sticky-cta {
+        display: flex; gap: .5rem; position: fixed; left: 0; right: 0; bottom: 0; z-index: 50;
+        padding: .6rem .75rem calc(.6rem + env(safe-area-inset-bottom, 0px));
+        background: #fff; border-top: 1px solid rgba(0,0,0,.12);
+      }
+      .sticky-cta .btn { flex: 1; text-align: center; justify-content: center; }
+      body { padding-bottom: 4.5rem; }
+    }
+  </style>
 </head>
 <body>
   <main class="page">
 
     <header class="hero-header">
-      <h1>1:1 AI classes for kids</h1>
       <p class="pill">Free 30-minute demo</p>
-      <p class="intro">Live one-on-one AI classes for ages 8-12 - always 1:1 with a real teacher, never a group class. Start with a free demo, the first class after the demo is $12, then $59 a week for two 1:1 classes.</p>
+      <h1>Your child builds something with AI in their first class</h1>
+      <p class="intro">Live one-on-one AI classes for ages 8-12, always 1:1 with a real teacher, never a group class. Try a free demo first. If you both like it, the next class is just $12.</p>
+      <div class="cta-row">
+        <a class="btn btn-primary btn-lg" data-cta="hero-book" href="https://calendly.com/arunjackson293/kids-ai-demo-free-30-min?utm_source=landing&utm_medium=hero" target="_blank" rel="noopener">Book my child's free demo <span class="arrow" aria-hidden="true">&#8599;</span></a>
+        <a class="btn btn-secondary btn-lg" data-cta="hero-whatsapp" href="https://wa.me/919880494125?text=Hi!%20I%20have%20a%20question%20about%20the%201%3A1%20AI%20classes%20for%20kids." target="_blank" rel="noopener">Ask on WhatsApp <span class="arrow" aria-hidden="true">&#8599;</span></a>
+      </div>
+      <p class="cta-note">Takes 1 minute to book. No payment needed for the demo.</p>
     </header>
 
     <figure class="photo">
-      <img src="purple-hero.png" alt="Purple, the friendly robot mascot of the classes, waving" />
+      <img src="purple-hero.png" alt="Purple, the friendly robot mascot of the classes, waving" fetchpriority="high" />
     </figure>
 
     <section>
       <h2>How it works</h2>
       <ol class="steps">
-        <li>Book a free 30-minute demo class below.</li>
-        <li>Your child picks a fun idea, builds it with the teacher in a live 1:1 class, and shows you what they made.</li>
-        <li>If it is a good fit, the first class after the demo is $12.</li>
-        <li>From there, it is $59 a week for two 1:1 classes.</li>
+        <li><strong>Pick a time.</strong> Book a free 30-minute demo below.</li>
+        <li><strong>Build something.</strong> Your child picks a fun idea and builds it with the teacher in a live 1:1 class.</li>
+        <li><strong>Show you.</strong> They share what they made with you at the end.</li>
+        <li><strong>Only if it fits.</strong> The first class after the demo is $12, then $59 a week for two 1:1 classes.</li>
       </ol>
+      <div class="cta-row">
+        <a class="btn btn-primary" data-cta="steps-book" href="https://calendly.com/arunjackson293/kids-ai-demo-free-30-min?utm_source=landing&utm_medium=how-it-works" target="_blank" rel="noopener">Pick a demo time <span class="arrow" aria-hidden="true">&#8599;</span></a>
+      </div>
     </section>
 
     <section>
-      <h2>What kids learn</h2>
-      <p>Every class is taught live, one-on-one, and paced for your child. Kids learn by doing, through stories, games and small projects.</p>
+      <h2>What your child will learn</h2>
+      <p>Every class is live, one-on-one and paced for your child. Kids learn by doing, through stories, games and small projects.</p>
       <ul class="bullets">
         <li>What AI is, how it learns, and why we check its answers</li>
-        <li>How to use AI for learning - hints and first steps, not finished answers</li>
+        <li>How to use AI to learn, with hints and first steps instead of finished answers</li>
         <li>Stories, games and small projects they build themselves</li>
         <li>Staying safe and private online, and honest use of AI at school</li>
       </ul>
     </section>
 
     <section>
-      <h2>The offer</h2>
+      <h2>Simple pricing</h2>
       <dl class="facts">
+        <div class="fact-row"><dt>Demo class</dt><dd><strong>Free</strong>, 30 minutes</dd></div>
+        <div class="fact-row"><dt>First class after the demo</dt><dd><strong>$12</strong></dd></div>
+        <div class="fact-row"><dt>After that</dt><dd><strong>$59 a week</strong> for two 1:1 classes (under $30 a class)</dd></div>
         <div class="fact-row"><dt>Ages</dt><dd>8-12</dd></div>
-        <div class="fact-row"><dt>Format</dt><dd>1:1 live class - never a group class</dd></div>
-        <div class="fact-row"><dt>Demo class</dt><dd>Free, 30 minutes</dd></div>
-        <div class="fact-row"><dt>First class after the demo</dt><dd>$12</dd></div>
-        <div class="fact-row"><dt>After that</dt><dd>$59 a week - two 1:1 classes</dd></div>
+        <div class="fact-row"><dt>Format</dt><dd>Live 1:1 with a real teacher, never a group class</dd></div>
       </dl>
       <div class="callout">
-        <p class="callout-title">Simple weekly plan</p>
-        <p>$59 a week covers two live 1:1 classes. The rest of the class plan is worked out with you after the demo.</p>
+        <p class="callout-title">Try it before you commit</p>
+        <p>The demo is free and nothing is charged on this page. The rest of the class plan is worked out with you after the demo.</p>
+      </div>
+      <div class="cta-row">
+        <a class="btn btn-primary btn-lg" data-cta="pricing-book" href="https://calendly.com/arunjackson293/kids-ai-demo-free-30-min?utm_source=landing&utm_medium=pricing" target="_blank" rel="noopener">Book my child's free demo <span class="arrow" aria-hidden="true">&#8599;</span></a>
       </div>
     </section>
 
     <section>
       <h2>Meet Purple</h2>
-      <p>Purple is the friendly face of the classes - curious, encouraging and always ready to explore.</p>
+      <p>Purple is the friendly face of the classes: curious, encouraging and always ready to explore.</p>
       <figure class="photo">
-        <img src="purple-poses.png" alt="Purple in four poses: thinking, with an idea, reading a book, and cheering" />
+        <img src="purple-poses.png" alt="Purple in four poses: thinking, with an idea, reading a book, and cheering" loading="lazy" />
       </figure>
     </section>
 
+    <section class="faq">
+      <h2>Questions parents ask</h2>
+      <details>
+        <summary>Is the demo really free?</summary>
+        <p>Yes. The 30-minute demo is free, and nothing is paid on this page.</p>
+      </details>
+      <details>
+        <summary>Is it a group class?</summary>
+        <p>No. Every class is live and one-on-one with a real teacher.</p>
+      </details>
+      <details>
+        <summary>What happens after the demo?</summary>
+        <p>If it is a good fit, the first class is $12. After that it is $59 a week for two 1:1 classes, and we work out the class plan with you.</p>
+      </details>
+      <details>
+        <summary>Is it safe for my child?</summary>
+        <p>Safety is part of what we teach: staying private online, checking AI's answers, and using AI honestly at school.</p>
+      </details>
+      <details>
+        <summary>Still unsure?</summary>
+        <p>Message us on WhatsApp and we will answer before you book.</p>
+      </details>
+    </section>
+
     <section>
-      <h2>Book a free demo</h2>
+      <h2>Ready to see what your child builds?</h2>
       <p>Pick a time that works for you, or message any questions first.</p>
       <div class="cta-row">
-        <a class="btn btn-primary" href="https://calendly.com/arunjackson293/kids-ai-demo-free-30-min" target="_blank" rel="noopener">Book a free demo class <span class="arrow" aria-hidden="true">&#8599;</span></a>
-        <a class="btn btn-secondary" href="https://wa.me/919880494125" target="_blank" rel="noopener">Message on WhatsApp <span class="arrow" aria-hidden="true">&#8599;</span></a>
+        <a class="btn btn-primary btn-lg" data-cta="final-book" href="https://calendly.com/arunjackson293/kids-ai-demo-free-30-min?utm_source=landing&utm_medium=footer" target="_blank" rel="noopener">Book my child's free demo <span class="arrow" aria-hidden="true">&#8599;</span></a>
+        <a class="btn btn-secondary btn-lg" data-cta="final-whatsapp" href="https://wa.me/919880494125?text=Hi!%20I%20have%20a%20question%20about%20the%201%3A1%20AI%20classes%20for%20kids." target="_blank" rel="noopener">Ask on WhatsApp <span class="arrow" aria-hidden="true">&#8599;</span></a>
       </div>
     </section>
 
     <footer class="closing">
-      <p>No sign-up or payment happens on this page - booking and questions go through the links above.</p>
+      <p>No sign-up or payment happens on this page. Booking and questions go through the links above.</p>
     </footer>
 
   </main>
+
+  <!-- Sticky mobile CTA: keeps the booking button one tap away while scrolling -->
+  <div class="sticky-cta">
+    <a class="btn btn-primary" data-cta="sticky-book" href="https://calendly.com/arunjackson293/kids-ai-demo-free-30-min?utm_source=landing&utm_medium=sticky" target="_blank" rel="noopener">Book free demo</a>
+    <a class="btn btn-secondary" data-cta="sticky-whatsapp" href="https://wa.me/919880494125?text=Hi!%20I%20have%20a%20question%20about%20the%201%3A1%20AI%20classes%20for%20kids." target="_blank" rel="noopener">WhatsApp</a>
+  </div>
 </body>
 </html>
