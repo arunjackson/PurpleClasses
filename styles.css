@@ -1,0 +1,162 @@
+/* 1:1 AI Classes for Kids - standalone landing page */
+
+:root {
+  --page-bg: #fbfaf9;
+  --ink: #251f21;
+  --ink-2: #585254;
+  --body-ink: #101113;
+  --hairline: #eae9ea;
+  --accent-green: #73a89a;
+  --serif: Georgia, "Times New Roman", serif;
+  --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+html, body { margin: 0; padding: 0; }
+
+body {
+  background: var(--page-bg);
+  color: var(--body-ink);
+  font-family: var(--sans);
+  font-size: 16px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+.page {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 48px 36px 64px;
+}
+
+h1 {
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.1;
+  color: var(--ink);
+  margin: 0 0 20px;
+}
+
+h2 {
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 1.3;
+  color: var(--ink);
+  margin: 0 0 16px;
+}
+
+p { margin: 0 0 12px; }
+
+.pill {
+  color: var(--accent-green);
+  font-size: 14px;
+  margin: 0 0 16px;
+}
+
+.intro {
+  font-size: 15px;
+  max-width: 62ch;
+  margin: 0 0 28px;
+}
+
+.photo {
+  margin: 0 0 40px;
+}
+
+.photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+section { margin: 0 0 40px; }
+
+.steps, .bullets {
+  margin: 0;
+  padding-left: 22px;
+  font-size: 14px;
+  color: var(--ink);
+}
+
+.steps li, .bullets li { margin: 0 0 8px; }
+
+section > p { font-size: 14px; color: var(--ink); }
+
+.facts {
+  margin: 0 0 24px;
+  font-size: 14px;
+}
+
+.fact-row {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 16px;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--hairline);
+}
+
+.fact-row dt { color: var(--ink-2); margin: 0; }
+.fact-row dd { color: var(--ink); margin: 0; }
+
+.callout { margin: 0 0 8px; }
+
+.callout-title {
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--ink);
+  margin: 0 0 6px;
+}
+
+.callout p { font-size: 14px; color: var(--ink); margin: 0; }
+
+.cta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  height: 40px;
+  padding: 0 16px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-family: var(--sans);
+  text-decoration: none;
+  border: 1px solid transparent;
+}
+
+.btn-primary {
+  background: var(--ink);
+  color: var(--page-bg);
+}
+
+.btn-secondary {
+  background: #ffffff;
+  color: var(--ink);
+  border-color: var(--hairline);
+}
+
+.btn .arrow { font-size: 13px; line-height: 1; }
+
+.closing {
+  margin-top: 48px;
+  color: var(--ink-2);
+  font-size: 14px;
+}
+
+.closing p { margin: 0; }
+
+@media (max-width: 600px) {
+  .page { padding: 32px 20px 48px; }
+  h1 { font-size: 30px; }
+  .fact-row { grid-template-columns: 1fr; gap: 2px; }
+  .btn { width: 100%; justify-content: center; }
+}
